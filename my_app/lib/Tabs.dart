@@ -127,6 +127,17 @@ class _TabsState extends State<Tabs>{
                 Navigator.of(context).pop();//先隐藏侧边栏
                 Navigator.pushNamed(context, '/dioDemo');//再推送
               },
+            ),
+            Divider(),
+            ListTile(
+              leading: CircleAvatar(
+                  child: Icon(Icons.settings)
+              ),
+              title: Text('建立原生通道'),
+              onTap: (){
+                Navigator.of(context).pop();//先隐藏侧边栏
+                Navigator.pushNamed(context, '/bridgeDemo');//再推送
+              },
             )
           ],
         )

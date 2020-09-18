@@ -7,6 +7,7 @@ import '../page/swiper.dart';
 import '../page/Dialog.dart';
 import '../page/JsonDemo.dart';
 import '../page/DioDemo.dart';
+import '../page/BridgeDemo.dart';
 
 final routes = {
   //路由配置
@@ -17,7 +18,8 @@ final routes = {
   '/swiper':(context)=>SwiperPage(),
   '/dialog':(context)=>DialogPage(),
   '/jsonDemo':(context)=>JsonDemoPage(),
-  '/dioDemo':(context)=>DioDemoPage()
+  '/dioDemo':(context)=>DioDemoPage(),
+  '/bridgeDemo':(context)=>BridgeDemoPage()
 };
 
 
