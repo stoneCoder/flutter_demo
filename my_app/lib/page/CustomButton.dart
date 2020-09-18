@@ -7,9 +7,9 @@ class CustomButtonPage extends StatelessWidget{
       appBar: AppBar(
         title: Text('按钮演示页'),
       ),
-      
+
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: Icon(Icons.add,color: Colors.black),
         backgroundColor: Colors.yellow,
         onPressed: (){
           print('FloatingActionButton');

@@ -78,7 +78,11 @@ class _TabsState extends State<Tabs>{
               leading: CircleAvatar(
                   child: Icon(Icons.people)
               ),
-              title: Text('用户中心'),
+              title: Text('轮播演示'),
+              onTap: (){
+                Navigator.of(context).pop();//先隐藏侧边栏
+                Navigator.pushNamed(context, '/swiper');//再推送
+              },
             ),
             Divider(),
             ListTile(
@@ -89,6 +93,39 @@ class _TabsState extends State<Tabs>{
               onTap: (){
                 Navigator.of(context).pop();//先隐藏侧边栏
                 Navigator.pushNamed(context, '/customButton');//再推送
+              },
+            ),
+            Divider(),
+            ListTile(
+              leading: CircleAvatar(
+                  child: Icon(Icons.settings)
+              ),
+              title: Text('提示框演示'),
+              onTap: (){
+                Navigator.of(context).pop();//先隐藏侧边栏
+                Navigator.pushNamed(context, '/dialog');//再推送
+              },
+            ),
+            Divider(),
+            ListTile(
+              leading: CircleAvatar(
+                  child: Icon(Icons.settings)
+              ),
+              title: Text('JsonDemo演示'),
+              onTap: (){
+                Navigator.of(context).pop();//先隐藏侧边栏
+                Navigator.pushNamed(context, '/jsonDemo');//再推送
+              },
+            ),
+            Divider(),
+            ListTile(
+              leading: CircleAvatar(
+                  child: Icon(Icons.settings)
+              ),
+              title: Text('DioDemo演示'),
+              onTap: (){
+                Navigator.of(context).pop();//先隐藏侧边栏
+                Navigator.pushNamed(context, '/dioDemo');//再推送
               },
             )
           ],

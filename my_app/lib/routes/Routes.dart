@@ -3,13 +3,21 @@ import '../Tabs.dart';
 import '../page/Search.dart';
 import '../page/User.dart';
 import '../page/CustomButton.dart';
+import '../page/swiper.dart';
+import '../page/Dialog.dart';
+import '../page/JsonDemo.dart';
+import '../page/DioDemo.dart';
 
 final routes = {
   //路由配置
   '/':(context)=>Tabs(),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
-  '/user':(content)=>UserPage(),
-  '/customButton':(content)=>CustomButtonPage()
+  '/user':(context)=>UserPage(),
+  '/customButton':(context)=>CustomButtonPage(),
+  '/swiper':(context)=>SwiperPage(),
+  '/dialog':(context)=>DialogPage(),
+  '/jsonDemo':(context)=>JsonDemoPage(),
+  '/dioDemo':(context)=>DioDemoPage()
 };
 
 
